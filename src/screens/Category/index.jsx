@@ -1,16 +1,18 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import styles from './styles'
-import Title from '../../components/Title'
-import { user } from '../../data/Category'
-export default function Category({route}) {
-  const {user} = route.params
+import { View } from "react-native";
+
+import styles from "./styles";
+import Title from "../../components/Title";
+import TouchButton from "../../components/TouchButton";
+import { user } from "../../data/Profile";
+
+export default function Category() {
   return (
     <View style={styles.container}>
-      <Title title={"Category - 👍"} />
-      <Text style={styles.text}>{user.name}</Text>
-      <Text style={styles.text}>{user.email}</Text> 
-      <Text style={styles.text}>{user.age}</Text>
+      <Title title="Category" />
+
+      <TouchButton route="Home" title="Go to Home" />
+
+      <TouchButton route="Profile" title="Go to Profile" data={user} />
     </View>
-  )
+  );
 }

@@ -1,21 +1,17 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    button: {
-        backgroundColor: "#C594C5",
-        padding: 10,
-        margin: 10,
-        borderRadius: 5,
-    },
-    text: {
-        fontSize: 20,
-        textAlign: "center",
-    },  
-    });
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  button: {
+    marginTop: 20,
+    padding: 10,
+    backgroundColor: "#C9D4FF",
+    borderRadius: 5,
+  },
+});
 
 export default styles;

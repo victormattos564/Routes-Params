@@ -1,5 +1,9 @@
 export const user = {
-    name: "Victor Hugo",
-    email:"Victor.maria@aluno.senai.br",
-    age:"17",
-}
+    name: "Victor Mattos",
+    email: "victormaria@aluno.senai.br",
+    phone: "1999999999",
+    address: {
+      city: "Valinhos",
+      state: "São Paulo",
+    },
+  };
